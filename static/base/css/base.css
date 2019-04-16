@@ -9,20 +9,21 @@ header{
 }
 .logo a {
     color: #738192;
-    font-size: 1.3rem;
-}
-.djnav{
-    position: relative;
+    font-size: 1.5rem;
 }
 .djnav li{
     list-style: none;
     display: inline-block;
     padding: 0 15px;
 }
-.djnav li:hover{
-    border-bottom:4px solid #20a0ff;
-}
+/*.nav-p{*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    top:61px;*/
+/*    border-bottom: 4px solid #20a0ff;*/
+/*}*/
 .djnav li a{
+    display: block;
     color: #738192;
     -webkit-transition: .25s;
     transition: .25s;
