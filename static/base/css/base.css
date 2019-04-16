@@ -1,0 +1,32 @@
+body{
+    background-color: #738192;
+}
+a[href]{text-decoration: none;}
+header{
+    height: 65px;
+    background-color:#fff;
+    line-height: 65px;
+}
+.logo a {
+    color: #738192;
+    font-size: 1.3rem;
+}
+.djnav{
+    position: relative;
+}
+.djnav li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 15px;
+}
+.djnav li:hover{
+    border-bottom:4px solid #20a0ff;
+}
+.djnav li a{
+    color: #738192;
+    -webkit-transition: .25s;
+    transition: .25s;
+}
+.djnav li a:hover{
+    color: #20a0ff
+}

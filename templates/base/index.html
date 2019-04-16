@@ -1,0 +1,38 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="{% static 'base/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'base/css/base.css' %}">
+    <script src="{% static 'base/js/jquery.min.js' %}"></script>
+    <script src="{% static 'base/js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="row">
+                <div class="col-md-2 logo">
+                    <a href="/">Disman</a>
+                </div>
+                <ul class="col-md-7 djnav">
+                    <ul class="nav-anchor"></ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">文章分类</a></li>
+                    <li><a href="#">优秀网址</a></li>
+                    <li><a href="#">个人Demo</a></li>
+                    <li><a href="#">关于我</a></li>
+                </ul>
+                <div class="col-md-3">
+                    <a href="#" class="btn btn-info" role="button">登录</a>
+                    <a href="#" class="btn btn-info" role="button">注册</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <script>
+
+    </script>
+</body>
+</html>
