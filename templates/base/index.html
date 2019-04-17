@@ -3,11 +3,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>首页</title>
-    <link rel="stylesheet" href="{% static 'base/css/bootstrap.min.css' %}">
+    <!-- ZUI 标准版压缩后的 CSS 文件 -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/zui/1.9.0/css/zui.min.css">
     <link rel="stylesheet" href="{% static 'base/css/base.css' %}">
-    <script src="{% static 'base/js/jquery.min.js' %}"></script>
-    <script src="{% static 'base/js/bootstrap.min.js' %}"></script>
+    <!-- ZUI Javascript 依赖 jQuery -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/zui/1.9.0/lib/jquery/jquery.js"></script>
+    <!-- ZUI 标准版压缩后的 JavaScript 文件 -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/zui/1.9.0/js/zui.min.js"></script>
 </head>
 <body>
     <header>
@@ -22,10 +27,25 @@
                     <li><a href="#">优秀网址</a></li>
                     <li><a href="#">个人Demo</a></li>
                     <li><a href="#">关于我</a></li>
+                     <div class="search">
+                        <div class="input-control search-box search-box-circle has-icon-left has-icon-right"
+                             id="searchboxExample">
+                            <input id="inputSearchExample1" type="search" class="form-control search-input"
+                                   placeholder="搜索">
+                            <label for="inputSearchExample1" class="input-control-icon-left search-icon"><i
+                                    class="icon icon-search"></i></label>
+                            <a href="#" class="input-control-icon-right search-clear-btn"><i
+                                    class="icon icon-remove"></i></a>
+                        </div>
+                    </div>
                 </ul>
+
                 <div class="col-md-3">
+
+                    <div class="login">
                     <a href="#" class="btn btn-info" role="button">登录</a>
                     <a href="#" class="btn btn-info" role="button">注册</a>
+                        </div>
                 </div>
             </div>
         </nav>

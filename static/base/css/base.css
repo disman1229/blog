@@ -9,22 +9,18 @@ header{
 }
 .logo a {
     color: #738192;
-    font-size: 1.5rem;
+    font-size: 3rem;
 }
 .djnav li{
     list-style: none;
     display: inline-block;
     padding: 0 15px;
 }
-/*.nav-p{*/
-/*    display: block;*/
-/*    position: absolute;*/
-/*    top:61px;*/
-/*    border-bottom: 4px solid #20a0ff;*/
-/*}*/
 .djnav li a{
     display: block;
+    font-weight:700;
     color: #738192;
+    font-size: 1.6rem;
     -webkit-transition: .25s;
     transition: .25s;
 }
