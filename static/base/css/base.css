@@ -1,7 +1,7 @@
 body{
     background-color: #738192;
 }
-a{color:#212121;}
+a{color:#738192;}
 a[href]{text-decoration: none;}
 .dis-header{
     background-color: #fff;
@@ -15,9 +15,12 @@ a[href]{text-decoration: none;}
     padding-left: 10px;
     z-index:300;
 }
-.dis-header-brand{
+.dis-header-brand, .dis-header-right{
     display: flex;
     align-items: center;
+}
+.dis-header-brand a:hover{
+    color: #738192;
 }
 .dis-header-brand-title{
     font-weight: bold;
@@ -29,3 +32,70 @@ a[href]{text-decoration: none;}
     font-size: 0.5rem;
     color:#616161;
 }
+.dis-header-right{
+    justify-content: flex-end;
+}
+.dis-header-navigation{
+    font-size: 16px;
+    padding-left: 10px;
+    display: flex;
+    /*overflow: auto;*/
+}
+.dis-header-navigation a {
+    margin-right: 1.5rem;
+    color: #738192;
+    display: block;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear;
+}
+.dis-header-navigation a:hover{
+    color: #20a0ff;
+}
+.dis-header-btn a{
+    width: 35px;
+    display: inline-block;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    cursor: pointer;
+}
+.dis-header-btn a i{
+    color: #fff;
+}
+#dis-github{
+    background-color: #4FC3F7;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+}
+#dis-search{
+    background-color: #03A9F4;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    margin-right: 10px;
+}
+
+/*.dis-blog-list{*/
+/*    border: 1px solid #eaeaea;*/
+/*    background-color: #fff;*/
+/*    margin-bottom: 20px;*/
+/*    -webkit-border-radius: 10px;*/
+/*    -moz-border-radius: 10px;*/
+/*    border-radius: 10px;*/
+/*}*/
+/*.dis-content-box{*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    padding: 1.5rem 2rem;*/
+/*}*/
+/*.dis-info-box{*/
+/*    flex: 1 1 auto;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    min-width: 0;*/
+/*}*/
