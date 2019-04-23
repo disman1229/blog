@@ -1,8 +1,9 @@
 body{
-    background-color: #738192;
+    background-color: #eaeef2;
 }
 a{color:#738192;}
 a[href]{text-decoration: none;}
+li{list-style: none;}
 .dis-header{
     background-color: #fff;
     display: flex;
@@ -78,24 +79,87 @@ a[href]{text-decoration: none;}
     border-radius: 35px;
     margin-right: 10px;
 }
+.dis-article{
+    position: relative;
+    top: 85px;
+}
+.dis-article-list{
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+.dis-article-list h4{
+    display: inline-block;
+}
+.dis-article-list a:hover{
+    color: #20a0ff;
+}
+.dis-article-list p{
+    position: relative;
+    line-height: 25px;
+    font-size: 14px;
+    color: #999;
+}
+.dis-article-info{
+    position: relative;
+    top: -3px;
+    display: inline-block;
+}
+.dis-article-info a ,.dis-article-info a:hover{
+    color:#fff;
+    font-size: 1rem;
+    font-weight: 200;
+}
+.dis-article-list p span a{
+    margin-right: 15px;
+}
+.dis-article-list p span img{
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+    position: relative;
+    border-radius: 25px;
+}
 
-/*.dis-blog-list{*/
-/*    border: 1px solid #eaeaea;*/
-/*    background-color: #fff;*/
-/*    margin-bottom: 20px;*/
-/*    -webkit-border-radius: 10px;*/
-/*    -moz-border-radius: 10px;*/
-/*    border-radius: 10px;*/
-/*}*/
-/*.dis-content-box{*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    padding: 1.5rem 2rem;*/
-/*}*/
-/*.dis-info-box{*/
-/*    flex: 1 1 auto;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: center;*/
-/*    min-width: 0;*/
-/*}*/
+/* 侧边栏 */
+.dis-article-sidebar{
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 0;
+}
+.dis-box-bgm{
+    border-bottom: 1px solid #eaeaea;
+}
+.dis-box-header h4{
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    border-bottom: 2px solid #20a0ff;
+    font-size: 1.2rem;
+    color: #738192;
+}
+.dis-box-list{
+    padding: 0 15px;
+}
+.dis-box-list li{
+    padding: 10px 0;
+    border-bottom: 1px solid #eaeaea;
+    font-size: 0.9rem;
+}
+.dis-box-list li:last-child{
+    border-bottom: 0;
+}
+.dis-box-list li a:hover{
+    color: #20a0ff;
+}
+.dis-box-list li span{
+    position: relative;
+    top: -1px;
+    margin-right: 5px;
+
+}
