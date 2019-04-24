@@ -1,0 +1,74 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'base/css/bootstrap.min.css' %}">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'base/css/base.css' %}">
+    <script src="{% static 'base/js/jquery.min.js' %}"></script>
+    <script src="{% static 'base/js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+<header class="dis-header">
+    <div class="dis-header-brand">
+            <span class="dis-header-brand-title">
+                <a href="/">Disman</a>
+            </span>
+        <span class="dis-header-brand-small"> | 蹉跎中生存... </span>
+    </div>
+    <div class="dis-header-right">
+        <div class="dis-header-navigation">
+            <a href="#" target="_self">Vue</a>
+            <a href="#" target="_self">Python</a>
+            <a href="#" target="_self">个人记事</a>
+            <a href="#" target="_self">分类</a>
+            <a href="#" target="_self">标签</a>
+            <a href="#" target="_self">本站简介</a>
+        </div>
+        <div class="dis-header-btn">
+            <a href="https://github.com/disman1229/blog/" target="_blank" id="dis-github"><i
+                    class="fa fa-github-alt"></i></a>
+            <a href="#" id="dis-search"><i class="fa fa-search"></i></a>
+        </div>
+    </div>
+</header>
+    { % block article_list %}{ % endblock%}
+<footer>
+    <div class="container">
+        <div class="dis-footer-items row">
+            <div class="col-md-6">
+                <h4>Disman</h4>
+                <p>关注Vue前端开发、Python全栈开发的综合网站；</br>
+                    分享学到的知识点和自己写的一些小程序；</br>
+                    大家一起写BUG，一起没钱途！
+                </p>
+            </div>
+            <div class="col-md-6">
+                <h4>关于本站</h4>
+                <div>
+                    <i class="fa fa-clock-o"></i> 本站已稳定运行
+                    <span id="site-time"> 438天10时48分3秒</span>
+                </div>
+                <div>
+                    <i class="fa fa-paw"></i>
+                    <span id="busuanzi_container_site_pv" style="display: inline;">您是本站第 <span
+                            id="busuanzi_value_site_pv">297232</span> 位访客</span> | 历史数据为 134728 位访客(未迁移)
+                </div>
+                <div>
+                    <i class="fa fa-at"></i> 深度合作: 346025232@qq.com | QQ交流群: 534018786
+                </div>
+            </div>
+            <div class="copyright">
+                <i class="fa fa-copyright"></i>
+                2019 <a href="https://github.com/disman1229/blog/" target="_blank">Disman-blog</a> ·
+                Created by <a href="/">Disman</a> ·
+                All rights reserved
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
