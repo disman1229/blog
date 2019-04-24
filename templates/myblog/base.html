@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>首页</title>
+    <title>{{ title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="{% static 'base/css/bootstrap.min.css' %}">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -35,7 +35,89 @@
         </div>
     </div>
 </header>
-    { % block article_list %}{ % endblock%}
+<article class="container dis-article">
+    <div class="row">
+        {% block article_list %}{% endblock %}
+        <div class="col-md-4">
+                <!-- 侧栏-热门文章 -->
+                <div class="dis-article-sidebar">
+                    <div class="dis-box-header">
+                        <h4>热门文章</h4>
+                    </div>
+                    <ul class="dis-box-list">
+                        <li class="dis-text-overflow">
+                            <span class="badge badge-pill badge-danger">1</span>
+                            <a href="#">学会了Vue，前端面试却没找到工作</a>
+                        </li>
+                        <li class="dis-text-overflow">
+                            <span class="badge badge-pill badge-warning">2</span>
+                            <a href="#">React Demo Three - 简书&掘金</a>
+                        </li>
+                        <li class="dis-text-overflow">
+                            <span class="badge badge-pill badge-success">3</span>
+                            <a href="#">尽量使用 useReducer，不要使用 useState</a>
+                        </li>
+                        <li class="dis-text-overflow">
+                            <span class="badge badge-pill badge-secondary">4</span>
+                            <a href="#">你不知道的 CSS 文档流技巧，让布局更简单</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 侧栏-最新文章 -->
+                <div class="dis-article-sidebar">
+                    <div class="dis-box-header">
+                        <h4>最新文章</h4>
+                    </div>
+                    <ul class="dis-box-list">
+                        <li class="dis-text-overflow">
+                            <span class="badge badge-pill badge-danger">1</span>
+                            <a href="#"> React Router v4教程：为你的 React 应用创建路</a>
+                        </li>
+                        <li class="dis-text-overflow">
+                            <span class="badge badge-pill badge-warning">2</span>
+                            <a href="#">前端必懂之Sticky Footer(粘性页脚)</a>
+                        </li>
+                        <li class="dis-text-overflow">
+                            <span class="badge badge-pill badge-success">3</span>
+                            <a href="#">前端的性能优化（针对内容方面）</a>
+                        </li>
+                        <li class="dis-text-overflow">
+                            <span class="badge badge-pill badge-secondary">4</span>
+                            <a href="#"> 可能这些是你想要的H5软键盘兼容方案</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 侧栏-热门标签 -->
+                <div class="dis-article-sidebar">
+                    <h5>热门标签</h5>
+                    <div class="dis-article-sidebar-tag">
+                        <a href="#" class="btn btn-outline-primary">Vue</a>
+                        <a href="#" class="btn btn-outline-primary">JQuery</a>
+                        <a href="#" class="btn btn-outline-primary">Django</a>
+                        <a href="#" class="btn btn-outline-primary">Flask</a>
+                        <a href="#" class="btn btn-outline-primary">CSS3</a>
+                        <a href="#" class="btn btn-outline-primary">HTML5</a>
+                        <a href="#" class="btn btn-outline-primary">Element</a>
+                        <a href="#" class="btn btn-outline-primary">Iview</a>
+                    </div>
+                </div>
+                <!-- 侧栏-友情链接 -->
+                <div class="dis-article-sidebar">
+                    <h5>友情链接</h5>
+                    <div class="dis-article-sidebar-tag">
+                        <a href="http://www.bootcss.com/" target="_blank" class="btn btn-outline-success">Bootstarp</a>
+                        <a href="https://cn.vuejs.org/" target="_blank" class="btn btn-outline-success">Vue.js</a>
+                        <a href="#" target="_blank" class="btn btn-outline-success">Django</a>
+                        <a href="#" target="_blank" class="btn btn-outline-success">Flask</a>
+                        <a href="#" target="_blank" class="btn btn-outline-success">CSS3</a>
+                        <a href="#" target="_blank" class="btn btn-outline-success">HTML5</a>
+                        <a href="#" target="_blank" class="btn btn-outline-success">Element</a>
+                        <a href="#" target="_blank" class="btn btn-outline-success">Iview</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+</article>
 <footer>
     <div class="container">
         <div class="dis-footer-items row">
